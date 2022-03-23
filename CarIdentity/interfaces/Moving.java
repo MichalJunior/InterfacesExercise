@@ -1,4 +1,4 @@
-package com.company;
+package CarIdentity.interfaces;
 
 public interface Moving {
     public abstract void Goforward();

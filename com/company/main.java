@@ -1,5 +1,8 @@
 package com.company;
 
+import CarIdentity.Car;
+import CarIdentity.interfaces.Moving;
+
 public class main {
     public static void main(String[] args) {
         System.out.println(Moving.interfacename);
@@ -7,9 +10,9 @@ public class main {
         Moving(bentley);
     }
 
-    private static void Moving(Car bentley) {
-        bentley.Goback();
+    public static void Moving(Car bentley) {
         bentley.Goforward();
+        bentley.Goback();
         bentley.Turn();
     }
 }

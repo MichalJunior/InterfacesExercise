@@ -1,9 +1,11 @@
-package com.company;
+package CarIdentity;
+
+import CarIdentity.interfaces.Moving;
 
 public class Car extends Wehicle implements Moving, Comparable<String> {
     int wheelsquantity;
 
-    Car(String mark, int wheelsquantity) {
+    public Car(String mark, int wheelsquantity) {
         super(mark);
         this.wheelsquantity = wheelsquantity;
     }

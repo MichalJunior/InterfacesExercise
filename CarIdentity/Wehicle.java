@@ -1,4 +1,4 @@
-package com.company;
+package CarIdentity;
 
 public class Wehicle {
     String mark;
