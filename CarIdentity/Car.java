@@ -1,35 +1,45 @@
 package CarIdentity;
 
 import CarIdentity.interfaces.Moving;
+import com.company.Colours;
 
-public class Car extends Wehicle implements Moving, Comparable<String> {
-    int wheelsquantity;
+public class Car implements Value, Moving {
 
-    public Car(String mark, int wheelsquantity) {
-        super(mark);
-        this.wheelsquantity = wheelsquantity;
+    String mark;
+    int wheelsquiantity;
+    Colours colour;
+
+
+    public Car(String mark, int wheelsquiantity, Colours colour) {
+        this.mark = mark;
+        this.wheelsquiantity = wheelsquiantity;
+        this.colour = colour;
     }
 
     @Override
+    public void Value() {
+        boolean cheap;
+        System.out.println(mark + " to tanie auto!");
+    }
+
+
+    @Override
     public void Goforward() {
-        System.out.println(mark + " jadę w przód");
+        System.out.println(mark + " wolno jedzie do przodu");
+
 
     }
 
     @Override
     public void Turn() {
-        System.out.println(mark + " Skręcaj");
+        System.out.println(mark + " skręca");
+
 
     }
 
     @Override
     public void Goback() {
-        System.out.println(mark +" jadę w tył");
+        System.out.println(mark + " wolno cofa");
 
-    }
-
-    @Override
-    public int compareTo(String o) {
-        return 0;
     }
 }

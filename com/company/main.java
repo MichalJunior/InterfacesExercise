@@ -1,18 +1,36 @@
 package com.company;
 
+import CarIdentity.SuperCar;
 import CarIdentity.Car;
 import CarIdentity.interfaces.Moving;
 
 public class main {
     public static void main(String[] args) {
         System.out.println(Moving.interfacename);
-        Car bentley = new Car("bentley", 4);
-        Moving(bentley);
+        Car Punto = new Car("punto", 4, Colours.ZIELONY);
+        SuperCar Bentley = new SuperCar("bentley", 4, Colours.CZARNY);
+
+
+        Moving(Bentley);
+        Moving(Punto);
+
+
     }
 
-    public static void Moving(Car bentley) {
-        bentley.Goforward();
-        bentley.Goback();
-        bentley.Turn();
+    private static void Moving(Car Punto) {
+        Punto.Value();
+        Punto.Goback();
+        Punto.Goforward();
+        Punto.Turn();
+
     }
+
+    public static void Moving(SuperCar Bentley) {
+        Bentley.Goforward();
+        Bentley.Goback();
+        Bentley.Turn();
+        System.out.println();
+    }
+
+
 }

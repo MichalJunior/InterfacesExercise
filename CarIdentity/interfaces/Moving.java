@@ -1,9 +1,11 @@
 package CarIdentity.interfaces;
 
 public interface Moving {
-    public abstract void Goforward();
 
-    String interfacename = "Poruszanie";
+
+    String interfacename = "Poruszanie samochodami";
+
+    void Goforward();
 
     void Turn();
 
