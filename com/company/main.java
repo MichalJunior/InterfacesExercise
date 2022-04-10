@@ -1,8 +1,9 @@
 package com.company;
 
-import CarIdentity.SuperCar;
-import CarIdentity.Car;
-import CarIdentity.interfaces.Moving;
+
+import car.features.Car;
+import car.features.SuperCar;
+import car.features.interfaces.Moving;
 
 public class main {
     public static void main(String[] args) {
@@ -11,10 +12,14 @@ public class main {
         SuperCar Bentley = new SuperCar("bentley", 4, Colours.CZARNY);
 
 
+        Moving(Punto, Bentley);
+
+
+    }
+
+    private static void Moving(Car Punto, SuperCar Bentley) {
         Moving(Bentley);
         Moving(Punto);
-
-
     }
 
     private static void Moving(Car Punto) {

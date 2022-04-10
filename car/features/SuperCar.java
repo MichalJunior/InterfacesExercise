@@ -1,6 +1,6 @@
-package CarIdentity;
+package car.features;
 
-import CarIdentity.interfaces.Moving;
+import car.features.interfaces.Moving;
 import com.company.Colours;
 
 public class SuperCar extends Car implements Moving, Value, Comparable<String> {
