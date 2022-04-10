@@ -1,8 +1,9 @@
 package com.company;
 
-import CarIdentity.SuperCar;
-import CarIdentity.Car;
-import CarIdentity.interfaces.Moving;
+
+import car.features.Car;
+import car.features.SuperCar;
+import car.features.interfaces.Moving;
 
 public class main {
     public static void main(String[] args) {
