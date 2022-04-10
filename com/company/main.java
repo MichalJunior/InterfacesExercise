@@ -11,10 +11,14 @@ public class main {
         SuperCar Bentley = new SuperCar("bentley", 4, Colours.CZARNY);
 
 
+        Moving(Punto, Bentley);
+
+
+    }
+
+    private static void Moving(Car Punto, SuperCar Bentley) {
         Moving(Bentley);
         Moving(Punto);
-
-
     }
 
     private static void Moving(Car Punto) {
